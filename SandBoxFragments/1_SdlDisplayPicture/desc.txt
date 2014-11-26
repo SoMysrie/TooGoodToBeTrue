@@ -1,0 +1,1 @@
+Display a graphic element to a precise position on the window.

@@ -1,0 +1,1 @@
+Contain game's fragments for tests and integrations.

@@ -1,0 +1,1 @@
+Management of the right click (a context menu) in order to execute actions.

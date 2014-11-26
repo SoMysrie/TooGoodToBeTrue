@@ -1,0 +1,1 @@
+Display on a virtual desktop a group of files and folders matching real folder's content.
