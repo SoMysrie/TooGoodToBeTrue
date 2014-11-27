@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1414424245 source:c:\documents sophie\projets_c\project_sdl\main.c
+	<stdlib.h>
+	<stdio.h>
+	<SDL/SDL.h>
+
