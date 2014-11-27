@@ -12,35 +12,37 @@ int main(int argc, char *argv[])
 
     positionFond.x          = 0;
     positionFond.y          = 0;
-    positionTrashEmpty.x    = 25;
-    positionTrashEmpty.y    = 25;
-    positionTrashFull.x     = 25;
-    positionTrashFull.y     = 25;
-    positionContactList.x   = 25;
-    positionContactList.y   = 150;
-    positionFile.x          = 25;
-    positionFile.y          = 300;
-    positionFolder.x        = 75;
-    positionFolder.y        = 25;
-    positionFolderImportant.x = 75;
-    positionFolderImportant.y = 75;
+    positionTrashEmpty.x    = 30;
+    positionTrashEmpty.y    = 30;
+    positionTrashFull.x     = 30;
+    positionTrashFull.y     = 30;
+    positionContactList.x   = 30;
+    positionContactList.y   = 120;
+    positionFile.x          = 50;
+    positionFile.y          = 210;
+    positionFolder.x        = 30;
+    positionFolder.y        = 300;
+    positionFolderImportant.x = 30;
+    positionFolderImportant.y = 390;
 
 
-    if (SDL_Init(SDL_INIT_VIDEO) == -1) // Démarrage de la SDL. Si erreur :
+    if (SDL_Init(SDL_INIT_VIDEO) == -1)
     {
-        fprintf(stderr, "Erreur d'initialisation de la SDL : %s\n", SDL_GetError()); // Écriture de l'erreur
-        exit(EXIT_FAILURE); // On quitte le programme
+        fprintf(stderr, "Erreur d'initialisation de la SDL : %s\n", SDL_GetError()); //ecriture de l'erreur
+        exit(EXIT_FAILURE); //arrêt du programme
     }
 
     ecran = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE | SDL_FULLSCREEN | SDL_DOUBLEBUF);
-    if (ecran == NULL) // Si l'ouverture a échoué, on le note et on arrête
+
+    // Si l'ouverture a échoué, on le note et on arrête
+    if (ecran == NULL)
     {
         fprintf(stderr, "Impossible de charger le mode vidéo : %s\n", SDL_GetError());
         exit(EXIT_FAILURE);
     }
     SDL_WM_SetCaption("Desktop", NULL);
 
-    //imageDeFond = IMG_Load("Resources/desktop.png");
+    //affichage des images
     imageDeFond = SDL_LoadBMP("Resources/desktop2.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
@@ -68,17 +70,21 @@ int main(int argc, char *argv[])
     SDL_SetColorKey(imageTrashFull, SDL_SRCCOLORKEY, SDL_MapRGB(imageTrashFull->format, 0, 0, 0));
     SDL_BlitSurface(imageTrashFull, NULL, ecran, &positionTrashFull);
 
-    SDL_Flip(ecran); /* Mise à jour de l'écran avec sa nouvelle couleur */
+    //mise à jour de l'écran avec sa nouvelle couleur
+    SDL_Flip(ecran);
     pause();
 
-    SDL_FreeSurface(imageDeFond); /* On libère la surface */
+    //liberation de la surface
+    SDL_FreeSurface(imageDeFond);
     SDL_FreeSurface(imageContactList);
     SDL_FreeSurface(imageFile);
     SDL_FreeSurface(imageFolder);
     SDL_FreeSurface(imageFolderImportant);
     SDL_FreeSurface(imageTrashEmpty);
     SDL_FreeSurface(imageTrashFull);
-    SDL_Quit(); // Arrêt de la SDL (libération de la mémoire).
+
+    //arrêt de la SDL (libération de la mémoire).
+    SDL_Quit();
 
     return 0;
 }
