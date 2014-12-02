@@ -1,11 +1,12 @@
 # depslib dependency file v1.0
-1417087351 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\1_sdldisplaypicture\sdldisplaypicture\main.c
+1417518073 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\3_loginsystemform\loginsystemform\loginsystemform.c
+	"header.h"
+
+1417516548 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\3_loginsystemform\loginsystemform\header.h
 	<stdlib.h>
 	<stdio.h>
 	<SDL/SDL.h>
-	<SDL/SDL_image.h>
-	<SDL_image.h>
-	"header.h"
+	"LoginSystemForm.h"
 
 1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl.h
 	"SDL_main.h"
@@ -197,26 +198,5 @@
 	"begin_code.h"
 	"close_code.h"
 
-1417072858 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\1_sdldisplaypicture\sdldisplaypicture\header.h
-	<stdlib.h>
-	<stdio.h>
-	<SDL/SDL.h>
-	"SdlDisplayPicture.h"
-
-1417073006 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\1_sdldisplaypicture\sdldisplaypicture\sdldisplaypicture.h
-
-1417073173 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\1_sdldisplaypicture\sdldisplaypicture\sdldisplaypicture.c
-	"header.h"
-
-1417075793 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_image.h
-	"SDL.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
-
-1417075793 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl_image.h
-	"SDL.h"
-	"SDL_version.h"
-	"begin_code.h"
-	"close_code.h"
+1417516305 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\3_loginsystemform\loginsystemform\loginsystemform.h
 

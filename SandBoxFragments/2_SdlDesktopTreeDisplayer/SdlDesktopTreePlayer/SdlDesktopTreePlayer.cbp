@@ -2,12 +2,12 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="SdlDisplayPicture" />
+		<Option title="SdlDesktopTreePlayer" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="bin/Debug/SdlDisplayPicture" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Debug/SdlDesktopTreePlayer" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
@@ -16,7 +16,7 @@
 				</Compiler>
 			</Target>
 			<Target title="Release">
-				<Option output="bin/Release/SdlDisplayPicture" prefix_auto="1" extension_auto="1" />
+				<Option output="bin/Release/SdlDesktopTreePlayer" prefix_auto="1" extension_auto="1" />
 				<Option object_output="obj/Release/" />
 				<Option type="0" />
 				<Option compiler="gcc" />
@@ -33,7 +33,6 @@
 			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL-1.2.15/include" />
 		</Compiler>
 		<Linker>
-			<Add option="-lSDL_Image" />
 			<Add library="mingw32" />
 			<Add library="SDLmain" />
 			<Add library="SDL.dll" />
@@ -41,15 +40,12 @@
 			<Add library="gdi32" />
 			<Add library="winmm" />
 			<Add library="dxguid" />
-			<Add library="..\..\..\..\..\..\..\..\Program Files (x86)\CodeBlocks\SDL-1.2.15\lib\SDL_image.lib" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL-1.2.15/lib" />
 		</Linker>
-		<Unit filename="SdlDisplayPicture.c">
+		<Unit filename="SdlDesktopTreePlayer.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="SdlDisplayPicture.h">
-			<Option target="&lt;{~None~}&gt;" />
-		</Unit>
+		<Unit filename="SdlDesktopTreePlayer.h" />
 		<Unit filename="cb.bmp" />
 		<Unit filename="header.h" />
 		<Unit filename="main.c">
@@ -59,7 +55,6 @@
 			<code_completion />
 			<envvars />
 			<debugger />
-			<lib_finder disable_auto="1" />
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>

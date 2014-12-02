@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
     // Si l'ouverture a échoué, on le note et on arrête
     if (ecran == NULL)
     {
-        fprintf(stderr, "Impossible de charger le mode vidéo : %s\n", SDL_GetError());
+        fprintf(stderr, "Impossible de charger le mode video : %s\n", SDL_GetError());
         exit(EXIT_FAILURE);
     }
     SDL_WM_SetCaption("Desktop", NULL);
