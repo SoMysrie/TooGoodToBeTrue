@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
-#include <SDL_image.h>
+//#include <SDL_image.h>
 #include "header.h"
 
 int main(int argc, char *argv[])
@@ -59,6 +59,7 @@ int main(int argc, char *argv[])
     SDL_BlitSurface(imageFolder, NULL, ecran, &positionFolder);
 
     imageFolderImportant = SDL_LoadBMP("Resources/folder_important.bmp");
+    //imageFolderImportant = IMG_Load("Resources/folder_important.bmp");
     SDL_SetColorKey(imageFolderImportant, SDL_SRCCOLORKEY, SDL_MapRGB(imageFolderImportant->format, 0, 0, 0));
     SDL_BlitSurface(imageFolderImportant, NULL, ecran, &positionFolderImportant);
 

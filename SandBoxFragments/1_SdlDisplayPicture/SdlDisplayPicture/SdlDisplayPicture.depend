@@ -1,10 +1,9 @@
 # depslib dependency file v1.0
-1417087351 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\1_sdldisplaypicture\sdldisplaypicture\main.c
+1417792321 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\1_sdldisplaypicture\sdldisplaypicture\main.c
 	<stdlib.h>
 	<stdio.h>
 	<SDL/SDL.h>
 	<SDL/SDL_image.h>
-	<SDL_image.h>
 	"header.h"
 
 1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl.h
