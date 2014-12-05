@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="LoginSystemForm" />
+		<Option title="LoginSystemFormDisplay" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -42,8 +42,15 @@
 			<Add library="dxguid" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL-1.2.15/lib" />
 		</Linker>
+		<Unit filename="LoginSystemForm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="LoginSystemForm.h" />
 		<Unit filename="cb.bmp" />
-		<Unit filename="main.cpp" />
+		<Unit filename="header.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Extensions>
 			<code_completion />
 			<envvars />
