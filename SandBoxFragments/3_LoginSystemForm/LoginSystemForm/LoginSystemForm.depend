@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1417708422 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\3_loginsystemform\loginsystemform\input.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
+1417786979 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\3_loginsystemform\loginsystemform\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"input.h"
+
+1417708422 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\3_loginsystemform\loginsystemform\input.h
+
