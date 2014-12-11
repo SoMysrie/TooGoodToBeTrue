@@ -231,3 +231,16 @@
 
 1417516305 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\3_loginsystemform\loginsystemformdisplay\loginsystemform.h
 
+1417793739 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\3_loginsystemform\loginsystemformdisplay\main.c
+	<stdlib.h>
+	<stdio.h>
+	<SDL/SDL.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+	"header.h"
+
+1325789594 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl_ttf.h
+	"SDL.h"
+	"begin_code.h"
+	"close_code.h"
+
