@@ -47,6 +47,10 @@
 			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL-1.2.15/lib" />
 		</Linker>
 		<Unit filename="cb.bmp" />
+		<Unit filename="displayPicture_loginSystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="displayPicture_loginSystem.h" />
 		<Unit filename="header.h" />
 		<Unit filename="input.c">
 			<Option compilerVar="CC" />
@@ -56,6 +60,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="kazutsn.h" />
+		<Unit filename="loginSystem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="loginSystem.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>

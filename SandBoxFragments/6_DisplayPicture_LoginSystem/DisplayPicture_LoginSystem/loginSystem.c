@@ -1,33 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "input.h"
-
-void addId(void);
-void createId (char *family_name, char *name, char *id);
-void checkFile(void);
-int check(char *id, char *mdp);
-
-int main (int argc, char **argv)
-{
-    char id[30], mdp[30];
-
-    checkFile();
-
-    do
-    {
-        input("Identifiant\n", id, 30);
-        input("Mot de passe\n", mdp, 30);
-        if (check(id, mdp) == 1)
-        {
-            printf("\n\nBienvenue!!\n\n");
-        }
-        else
-            printf("L'identifiant ou le mot de passe est incorrect.\n");
-    }while (check(id, mdp) == 0);
-
-    return 0;
-}
+#include "header.h"
 
 void addId (void)
 {
@@ -76,7 +47,7 @@ void checkFile(void)
     char affiche[50];
     int i = 1;
 
-    fichier = fopen("fichier_id", "rb");
+    fichier = fopen("fichier_Id", "rb");
 
     while(fread(affiche, sizeof (char), 30, fichier), !feof(fichier))
     {
@@ -101,7 +72,7 @@ int check(char *id, char *mdp)
     char affiche[50];
     int i = 1, checkId = 0, checkMdp = 0;
 
-    fichier = fopen("fichier_id", "rb");
+    fichier = fopen("fichier_Id", "rb");
 
     fseek(fichier, 60, SEEK_SET);       //pour se positionner sur l'id
     while(fread(affiche, sizeof (char), 10, fichier), !feof(fichier))

@@ -1,6 +1,6 @@
 #include "header.h"
 
-int kazutsnDesktop(int argc, char *argv[])
+int kazutsnDesktop()
 {
     SDL_Surface *ecran = NULL, *imageDeFond = NULL, *imageContactList = NULL, *imageFile = NULL, *imageFolder = NULL, *imageFolderImportant = NULL, *imageTrashEmpty = NULL, *imageTrashFull = NULL;
     SDL_Rect positionFond, positionContactList, positionFile, positionFolder, positionFolderImportant, positionTrashEmpty, positionTrashFull;
