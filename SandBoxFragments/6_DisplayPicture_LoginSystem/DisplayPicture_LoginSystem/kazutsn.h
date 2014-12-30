@@ -1,0 +1,6 @@
+#ifndef KAZUTSN_H_INCLUDED
+#define KAZUTSN_H_INCLUDED
+
+
+
+#endif // KAZUTSN_H_INCLUDED

@@ -17,6 +17,7 @@
 				<Linker>
 					<Add library="..\..\..\..\..\..\..\..\Program Files (x86)\CodeBlocks\SDL-1.2.15\lib\SDL_image.lib" />
 					<Add library="..\..\..\..\..\..\..\..\Program Files (x86)\CodeBlocks\SDL-1.2.15\lib\SDL_ttf.lib" />
+					<Add library="..\..\..\..\..\..\..\..\Program Files (x86)\CodeBlocks\SDL-1.2.15\lib\SDL_ttf.lib" />
 				</Linker>
 			</Target>
 			<Target title="Release">
