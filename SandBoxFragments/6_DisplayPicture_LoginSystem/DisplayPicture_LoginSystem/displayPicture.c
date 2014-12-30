@@ -56,11 +56,11 @@ int displayDesktop(char id)
     return 0;
 }
 */
-/*
+
 int desktopContent(SDL_Surface ecran)
 {
-    SDL_Surface *imageContactList = NULL, *imageFile = NULL, *imageFolder = NULL, *imageFolderImportant = NULL, *imageTrashEmpty = NULL, *imageTrashFull = NULL;
-    SDL_Rect positionContactList, positionFile, positionFolder, positionFolderImportant, positionTrashEmpty, positionTrashFull;
+    SDL_Surface *imageContactList = NULL, *imageFile = NULL, *imageFolder = NULL, *imageFolderImportant = NULL, *imageTrashEmpty = NULL, *imageTrashFull = NULL, *imageStop = NULL;
+    SDL_Rect positionContactList, positionFile, positionFolder, positionFolderImportant, positionTrashEmpty, positionTrashFull, positionStop;
 
     positionTrashEmpty.x        = 30;
     positionTrashEmpty.y        = 30;
@@ -74,6 +74,8 @@ int desktopContent(SDL_Surface ecran)
     positionFolder.y            = 300;
     positionFolderImportant.x   = 30;
     positionFolderImportant.y   = 390;
+    positionStop.x              = 30;
+    positionStop.y              = 500;
 
     imageContactList = SDL_LoadBMP("Resources/contact_list.bmp");
     SDL_SetColorKey(imageContactList, SDL_SRCCOLORKEY, SDL_MapRGB(imageContactList->format, 0, 0, 0));
@@ -100,16 +102,21 @@ int desktopContent(SDL_Surface ecran)
     SDL_SetColorKey(imageTrashFull, SDL_SRCCOLORKEY, SDL_MapRGB(imageTrashFull->format, 0, 0, 0));
     SDL_BlitSurface(imageTrashFull, NULL, ecran, &positionTrashFull);
 
+    imageStop = SDL_LoadBMP("Resources/stop.bmp");
+    SDL_SetColorKey(imageStop, SDL_SRCCOLORKEY, SDL_MapRGB(imageStop->format, 0, 0, 0));
+    SDL_BlitSurface(imageStop, NULL, ecran, &positionTrashFull);
+
     SDL_FreeSurface(imageContactList);
     SDL_FreeSurface(imageFile);
     SDL_FreeSurface(imageFolder);
     SDL_FreeSurface(imageFolderImportant);
     SDL_FreeSurface(imageTrashEmpty);
     SDL_FreeSurface(imageTrashFull);
+    SDL_FreeSurface(imageStop);
 
     //arrêt de la SDL (libération de la mémoire).
     SDL_Quit();
 
     return 0;
 }
-*/
+
