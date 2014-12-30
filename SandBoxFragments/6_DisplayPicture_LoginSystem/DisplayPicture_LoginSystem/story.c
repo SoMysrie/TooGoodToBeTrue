@@ -4,30 +4,66 @@ int verifId(int *answer)
 {
     //system("PAUSE");
     //system("cls");
-    do
-    {
-        printf("\n\n");
-        printf("\nAvez vous un identifiant?\n");
-        printf("1. Oui.\n");
-        printf("2. Non.\n");
-        scanf("%d", answer);
-        printf("\n\n");
-    }while(answer<1 || answer>2);
+
+    printf("\n\n");
+    printf("\nAvez vous un identifiant?\n");
+    printf("1. Oui.\n");
+    printf("2. Non.\n");
+    scanf("%d", answer);
+    printf("\n\n");
 }
 
 int anotherTime(int *answer)
 {
     //system("PAUSE");
     //system("cls");
-    do
-    {
-        printf("\n\n");
-        printf("\nVoulez vous faire une autre partie?\n");
-        printf("1. Oui.\n");
-        printf("2. Non.\n");
-        scanf("%d", answer);
-        printf("\n\n");
-    }while
+
+    printf("\n\n");
+    printf("\nVoulez vous faire une autre partie?\n");
+    printf("1. Oui.\n");
+    printf("2. Non.\n");
+    scanf("%d", answer);
+    printf("\n\n");
+
+    //system("PAUSE");
+    //system("cls");
+}
+
+int wantToVerifDrug(int *answer)
+{
+    //system("PAUSE");
+    //system("cls");
+
+    printf("\n\n");
+    printf("\nAvez vous trouver le medicament defectueux?\n");
+    printf("1. Oui.\n");
+    printf("2. Non.\n");
+    scanf("%d", answer);
+    printf("\n\n");
+
+    //system("PAUSE");
+    //system("cls");
+}
+
+int verifDrug(int *answer)
+{
+    //system("PAUSE");
+    //system("cls");
+
+    printf("\n\n");
+    printf("\nQuel est le medicament defectueux?\n");
+    printf("1. Combantrin 125mg cp.\n");
+    printf("2. Josacine 125mg/5mL glé p susp buv.\n");
+    printf("3. Muxol sol buv.\n");
+    printf("4. Qvar Autohaler 500 micro/dose sol p inhal.\n");
+    printf("5. Skaÿ 0.5% collyre.\n");
+    printf("6. Telmisartan Ranbaxy 80 mg cp.\n");
+    printf("7. Zolmitriptan Evolugen 2.5mg cp pellic.\n");
+    scanf("%d", answer);
+    printf("\n\n");
+
+    //system("PAUSE");
+    //system("cls");
 }
 
 void storyGame()
@@ -58,28 +94,9 @@ void storyGame()
 
     printf("Bon courage!");
     printf("\n\n\n\n");
-    //system("PAUSE");
-    //system("cls");
-}
 
-int verifDrug(int *answer)
-{
     //system("PAUSE");
     //system("cls");
-    do
-    {
-        printf("\n\n");
-        printf("\nQuel est le medicament defectueux?\n");
-        printf("1. Combantrin 125mg cp.\n");
-        printf("2. Josacine 125mg/5mL glé p susp buv.\n");
-        printf("3. Muxol sol buv.\n");
-        printf("4. Qvar Autohaler 500 micro/dose sol p inhal.\n");
-        printf("5. Skaÿ 0.5% collyre.\n");
-        printf("6. Telmisartan Ranbaxy 80 mg cp.\n");
-        printf("7. Zolmitriptan Evolugen 2.5mg cp pellic.\n");
-        scanf("%d", answer);
-        printf("\n\n");
-    }while(answerDrug<1 || answerDrug>8);
 }
 
 void happyEndGame()
@@ -90,15 +107,16 @@ void happyEndGame()
     printf("\n\n\n\n");
     printf("Bravo!!");
     printf("\n\n\n\n");
-    printf("Le Qvar est bien le medicament defectueux!");
+    printf("Le Qvar est bien le medicament defectueux!\n\n");
     printf("Grace a votre perseverance,\n");
     printf("vous avez sauve beaucoup de vies!");
+    printf("\n\n\n\n");
 
     //system("PAUSE");
     //system("cls");
 }
 
-int badEndGame(int *answer)
+void badEndGame()
 {
     //system("PAUSE");
     //system("cls");
@@ -106,7 +124,6 @@ int badEndGame(int *answer)
     printf("\n\n\n\n");
     printf("Game Over!!");
     printf("\n\n\n\n");
-    anotherTime(&answer);
 
     //system("PAUSE");
     //system("cls");

@@ -3,23 +3,24 @@
 int main(int argc, char *argv[])
 {
     char id[30], mdp[30];
-    int answerId, answerAgain, answerDrug, cpt = 0;
+    int  cpt = 0, continuer = 1;
+    int answerId, answerAgain, answerDrug, answerWant;
 
     freopen("CON", "w", stdout);
     freopen("CON", "w", stderr);
 
+    checkFile();
+
+    storyGame();
+
     do
     {
-        checkFile();
+        //addId(1);
+        verifId(&answerId);
+    }while(answerId!=1);
 
-        storyGame();
-
-        do
-        {
-            //addId(1);
-            verifId(&answerId);
-        }while(answerId!=1);
-
+    do
+    {
         do
         {
             input("\n\nIdentifiant\n\n", id, 30);
@@ -31,24 +32,34 @@ int main(int argc, char *argv[])
                 printf("\n\nL'identifiant ou le mot de passe est incorrect.\n\n");
         }while (check(id, mdp) == 0);
 
-        verifDrug(&answerDrug);
+        wantToVerifDrug(&answerWant);
 
-        switch(answerDrug)
+        if(answerWant == 1)
         {
-            case 4:
-                happyEndGame();
-                return 0;
-                break;
-            default:
-                cpt++;
-                printf("\n\nMauvais medicament!\n\n");
-                printf("Vous etes a %d coups.\n\n", cpt);
-                break;
+            verifDrug(&answerDrug);
+            switch(answerDrug)
+            {
+                case 4:
+                    happyEndGame();
+                    continuer = 0;
+                    break;
+                default:
+                    cpt++;
+                    printf("\n\nMauvais medicament!\n\n");
+                    printf("Vous etes a %d coups.\n\n", cpt);
+                    break;
+            }
         }
 
-        badEndGame(answerAgain);
-    }while(answerAgain!=2);
+        if(cpt == 1)
+        {
+            badEndGame();
+            anotherTime(&answerAgain);
+            if(answerAgain == 2)
+                continuer = 0;
+        }
 
+    }while(continuer != 0);
 
     return 0;
 }
