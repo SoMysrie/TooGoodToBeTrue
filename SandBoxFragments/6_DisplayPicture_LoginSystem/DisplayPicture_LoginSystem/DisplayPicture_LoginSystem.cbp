@@ -46,11 +46,19 @@
 			<Add library="dxguid" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL-1.2.15/lib" />
 		</Linker>
+		<Unit filename="brinklr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="brinklr.h" />
 		<Unit filename="cb.bmp" />
 		<Unit filename="displayPicture_loginSystem.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="displayPicture_loginSystem.h" />
+		<Unit filename="ezzedir.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ezzedir.h" />
 		<Unit filename="header.h" />
 		<Unit filename="input.c">
 			<Option compilerVar="CC" />
@@ -60,13 +68,33 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="kazutsn.h" />
+		<Unit filename="lacroiv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="lacroiv.h" />
 		<Unit filename="loginSystem.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="loginSystem.h" />
+		<Unit filename="madoffb.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="madoffb.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="morsec.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="morsec.h" />
+		<Unit filename="ponzic.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ponzic.h" />
+		<Unit filename="standfa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="standfa.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -4,10 +4,10 @@
 	<stdlib.h>
 	<string.h>
 
-1419926034 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\kazutsn.c
+1419928585 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\kazutsn.c
 	"header.h"
 
-1419927194 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\header.h
+1419928905 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\header.h
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
@@ -16,7 +16,14 @@
 	"input.h"
 	"loginSystem.h"
 	"displayPicture_loginSystem.h"
+	"brinklr.h"
+	"ezzedir.h"
 	"kazutsn.h"
+	"lacroiv.h"
+	"madoffb.h"
+	"morsec.h"
+	"ponzic.h"
+	"standfa.h"
 
 1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl.h
 	"SDL_main.h"
@@ -216,7 +223,7 @@
 
 1419926024 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\kazutsn.h
 
-1419926970 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\main.c
+1419929078 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\main.c
 	"header.h"
 
 1419926029 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture_loginsystem.h
@@ -229,5 +236,40 @@
 1419926475 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\loginsystem.h
 
 1419926293 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\loginsystem.c
+	"header.h"
+
+1419928550 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\brinklr.h
+
+1419928569 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\ezzedir.h
+
+1419928790 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\lacroiv.h
+
+1419929097 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\madoffb.h
+
+1419928813 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\morsec.h
+
+1419928803 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\ponzic.h
+
+1419928760 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\standfa.h
+
+1419928540 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\brinklr.c
+	"header.h"
+
+1419928624 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\ezzedir.c
+	"header.h"
+
+1419928614 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\lacroiv.c
+	"header.h"
+
+1419928678 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\madoffb.c
+	"header.h"
+
+1419928724 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\morsec.c
+	"header.h"
+
+1419928729 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\ponzic.c
+	"header.h"
+
+1419928747 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\standfa.c
 	"header.h"
 

@@ -1,6 +1,6 @@
 #include "header.h"
 
-int kazutsnDesktop()
+int madoffbDesktop()
 {
     SDL_Surface *ecran = NULL, *imageDeFond = NULL, *imageContactList = NULL, *imageFile = NULL, *imageFolder = NULL, *imageFolderImportant = NULL, *imageTrashEmpty = NULL, *imageTrashFull = NULL;
     SDL_Rect positionFond, positionContactList, positionFile, positionFolder, positionFolderImportant, positionTrashEmpty, positionTrashFull;
@@ -35,10 +35,10 @@ int kazutsnDesktop()
         fprintf(stderr, "Impossible de charger le mode video : %s\n", SDL_GetError());
         exit(EXIT_FAILURE);
     }
-    SDL_WM_SetCaption("Desktop", NULL);
+    SDL_WM_SetCaption("Desktop5", NULL);
 
     //affichage des images
-    imageDeFond = SDL_LoadBMP("Resources/desktop3.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     imageContactList = SDL_LoadBMP("Resources/contact_list.bmp");

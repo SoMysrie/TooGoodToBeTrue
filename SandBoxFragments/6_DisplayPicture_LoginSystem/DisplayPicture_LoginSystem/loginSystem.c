@@ -47,7 +47,7 @@ void checkFile(void)
     char affiche[50];
     int i = 1;
 
-    fichier = fopen("fichier_Id", "rb");
+    fichier = fopen("fichier_id", "rb");
 
     while(fread(affiche, sizeof (char), 30, fichier), !feof(fichier))
     {
@@ -72,7 +72,7 @@ int check(char *id, char *mdp)
     char affiche[50];
     int i = 1, checkId = 0, checkMdp = 0;
 
-    fichier = fopen("fichier_Id", "rb");
+    fichier = fopen("fichier_id", "rb");
 
     fseek(fichier, 60, SEEK_SET);       //pour se positionner sur l'id
     while(fread(affiche, sizeof (char), 10, fichier), !feof(fichier))
