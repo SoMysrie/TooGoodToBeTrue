@@ -67,6 +67,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="story.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="story.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

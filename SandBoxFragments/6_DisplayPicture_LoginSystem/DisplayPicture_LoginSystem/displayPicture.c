@@ -105,30 +105,6 @@ int desktopContent(SDL_Surface *ecran)
     return 0;
 }
 
-int employeeDesktop()
-{
-    SDL_Surface *ecran = NULL, *imageDeFond = NULL;
-    SDL_Rect positionFond;
-
-    positionFond.x = 0;
-    positionFond.y = 0;
-
-    testSdl();
-
-    ecran = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE | SDL_FULLSCREEN | SDL_DOUBLEBUF);
-
-    testEcran(ecran);
-
-    imageDeFond = SDL_LoadBMP("Resources/desktop.bmp");
-    SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
-
-    desktopContent(ecran);
-
-    clearEcran(ecran);
-
-    return 0;
-}
-
 int displayDesktop(char id[30])
 {
     if(strcmp(id, "kazutsn"))
@@ -148,7 +124,7 @@ int displayDesktop(char id[30])
     else if(strcmp(id, "ponzic"))
         ponzicDesktop();
     else
-        printf("\n\nErreur!\n\n");
+        employeeDesktop();
 
     return 0;
 }
