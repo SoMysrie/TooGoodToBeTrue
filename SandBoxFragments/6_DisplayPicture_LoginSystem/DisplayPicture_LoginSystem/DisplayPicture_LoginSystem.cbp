@@ -46,55 +46,27 @@
 			<Add library="dxguid" />
 			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL-1.2.15/lib" />
 		</Linker>
-		<Unit filename="brinklr.c">
+		<Unit filename="cb.bmp" />
+		<Unit filename="desktop.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="brinklr.h" />
-		<Unit filename="cb.bmp" />
+		<Unit filename="desktop.h" />
 		<Unit filename="displayPicture.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="displayPicture.h" />
-		<Unit filename="ezzedir.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="ezzedir.h" />
 		<Unit filename="header.h" />
 		<Unit filename="input.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="input.h" />
-		<Unit filename="kazutsn.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="kazutsn.h" />
-		<Unit filename="lacroiv.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="lacroiv.h" />
 		<Unit filename="loginSystem.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="loginSystem.h" />
-		<Unit filename="madoffb.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="madoffb.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="morsesc.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="morsesc.h" />
-		<Unit filename="ponzic.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="ponzic.h" />
-		<Unit filename="standfa.c">
-			<Option compilerVar="CC" />
-		</Unit>
-		<Unit filename="standfa.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />

@@ -12,14 +12,6 @@
 #include "input.h"
 #include "loginSystem.h"
 #include "displayPicture.h"
-#include "brinklr.h"
-#include "ezzedir.h"
-#include "kazutsn.h"
-#include "lacroiv.h"
-#include "madoffb.h"
-#include "morsesc.h"
-#include "ponzic.h"
-#include "standfa.h"
-
+#include "desktop.h"
 
 #endif // HEADER
