@@ -216,7 +216,7 @@
 
 1419926024 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\kazutsn.h
 
-1419933897 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\main.c
+1419941281 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\main.c
 	"header.h"
 
 1419933035 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture_loginsystem.h
@@ -228,7 +228,7 @@
 
 1419926475 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\loginsystem.h
 
-1419929347 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\loginsystem.c
+1419940696 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\loginsystem.c
 	"header.h"
 
 1419928550 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\brinklr.h
@@ -273,8 +273,11 @@
 
 1419930954 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\morsesc.h
 
-1419938580 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture.c
+1419941269 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture.c
 	"header.h"
 
 1419939567 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\desktop.h
+
+1419941157 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\desktop.c
+	"header.h"
 

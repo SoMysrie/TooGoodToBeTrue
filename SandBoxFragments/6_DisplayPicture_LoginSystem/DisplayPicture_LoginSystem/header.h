@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <conio.h>
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
 

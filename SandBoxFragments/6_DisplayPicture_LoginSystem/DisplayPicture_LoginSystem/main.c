@@ -7,14 +7,22 @@ int main(int argc, char *argv[])
     freopen("CON", "w", stdout);
     freopen("CON", "w", stderr);
 
-    checkFile();
+    //checkFile();
+    //addId(1);
+
+    system("cls");
+
+    printf("\n\nBienvenue sur le jeu Too Good To Be True!\n\n");
+
+    system("cls");
 
     do
     {
         input("\n\nIdentifiant\n\n", id, 30);
         input("\n\nMot de passe\n\n", mdp, 30);
         if (check(id, mdp) == 1)
-            displayDesktop(id);
+            //displayDesktop(id);
+            employeeDesktop();
         else
             printf("\n\nL'identifiant ou le mot de passe est incorrect.\n\n");
     }while (check(id, mdp) == 0);

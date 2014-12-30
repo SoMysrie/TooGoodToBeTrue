@@ -105,6 +105,30 @@ int desktopContent(SDL_Surface *ecran)
     return 0;
 }
 
+int employeeDesktop()
+{
+    SDL_Surface *ecran = NULL, *imageDeFond = NULL;
+    SDL_Rect positionFond;
+
+    positionFond.x = 0;
+    positionFond.y = 0;
+
+    testSdl();
+
+    ecran = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE | SDL_FULLSCREEN | SDL_DOUBLEBUF);
+
+    testEcran(ecran);
+
+    imageDeFond = SDL_LoadBMP("Resources/desktop.bmp");
+    SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
+
+    desktopContent(ecran);
+
+    clearEcran(ecran);
+
+    return 0;
+}
+
 int displayDesktop(char id[30])
 {
     if(strcmp(id, "kazutsn"))
@@ -113,7 +137,7 @@ int displayDesktop(char id[30])
         ezzedirDesktop();
     else if(strcmp(id, "morsesc"))
         morsescDesktop();
-    if(strcmp(id, "brinklr"))
+    else if(strcmp(id, "brinklr"))
         brinklrDesktop();
     else if(strcmp(id, "standfa"))
         standfaDesktop();
@@ -128,4 +152,3 @@ int displayDesktop(char id[30])
 
     return 0;
 }
-

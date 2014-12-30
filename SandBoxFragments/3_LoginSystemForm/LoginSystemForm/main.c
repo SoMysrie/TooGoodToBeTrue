@@ -1,41 +1,48 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <conio.h>
 #include "input.h"
 
-void addId(void);
+void addId(int n);
 void createId (char *family_name, char *name, char *id);
 void checkFile(void);
 int check(char *id, char *mdp);
 
 int main (int argc, char **argv)
 {
-    char id[30], mdp[30];
+    char familyName[30], name[30], id[30], mdp[30];
 
     checkFile();
 
     do
     {
-        input("Identifiant\n", id, 30);
-        input("Mot de passe\n", mdp, 30);
+        input("\n\nIdentifiant\n\n", id, 30);
+        input("\n\nMot de passe\n\n", mdp, 30);
         if (check(id, mdp) == 1)
         {
             printf("\n\nBienvenue!!\n\n");
         }
         else
-            printf("L'identifiant ou le mot de passe est incorrect.\n");
+            printf("\n\nL'identifiant ou le mot de passe est incorrect.\n\n");
     }while (check(id, mdp) == 0);
+
+    system("cls");
+
+    addId(1);
+
+    checkFile();
 
     return 0;
 }
 
-void addId (void)
+void addId (int n)
 {
     char familyName[30], name[30], identifiant[10], motDePasse[30];
     FILE *fichier;
     int i = 0;
 
-    for(i=0; i<8; i++)
+    for(i=0; i<n; i++)
     {
         input("Quel est votre nom?\n", familyName, 30);
         input("Quel est votre prenom?\n", name, 30);

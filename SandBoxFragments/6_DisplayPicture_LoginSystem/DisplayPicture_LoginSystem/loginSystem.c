@@ -1,19 +1,19 @@
 #include "header.h"
 
-void addId (void)
+void addId (int n)
 {
     char familyName[30], name[30], identifiant[10], motDePasse[30];
     FILE *fichier;
     int i = 0;
 
-    for(i=0; i<8; i++)
+    for(i=0; i<n; i++)
     {
-        input("Quel est votre nom?\n", familyName, 30);
-        input("Quel est votre prenom?\n", name, 30);
-        input("Quel est votre mot de passe?\n", motDePasse, 30);
+        input("\n\nQuel est votre nom?\n\n", familyName, 30);
+        input("\n\nQuel est votre prenom?\n\n", name, 30);
+        input("\n\nQuel est votre mot de passe?\n\n", motDePasse, 30);
 
         createId(familyName, name, identifiant);
-        printf("Votre identifiant est %s\n", identifiant);
+        printf("\n\nVotre identifiant est %s.\n\n", identifiant);
 
         fichier = fopen("fichier_id", "ab");
 
@@ -22,7 +22,7 @@ void addId (void)
         fwrite(identifiant, sizeof (char), 10, fichier);
         fwrite(motDePasse, sizeof (char), 30, fichier);
         fclose(fichier);
-        printf("\nUtilisateur ajoute dans le fichier\n\n");
+        printf("\n\nUtilisateur ajoute dans le fichier.\n\n");
     }
 }
 
@@ -51,6 +51,7 @@ void checkFile(void)
 
     while(fread(affiche, sizeof (char), 30, fichier), !feof(fichier))
     {
+        printf("\n\n");
         printf("Nom du %d utlisateur: %s || ", i, affiche);
         fread(affiche, sizeof(char), 30, fichier);
         printf("Prenom: %s || ", affiche);
@@ -58,11 +59,9 @@ void checkFile(void)
         printf("Identifiant: %s || ", affiche);
         fread(affiche, sizeof(char), 30, fichier);
         printf("Mot de passe: %s || ", affiche);
-
         printf("\n\n");
         i++;
     }
-
     fclose(fichier);
 }
 

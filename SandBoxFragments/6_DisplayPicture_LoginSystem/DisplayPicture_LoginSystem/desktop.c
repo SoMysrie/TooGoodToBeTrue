@@ -14,7 +14,7 @@ int brinklrDesktop()
 
     testEcran(ecran);
 
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gyokuro.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_cafe.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     desktopContent(ecran);
@@ -38,7 +38,7 @@ int ezzedirDesktop()
 
     testEcran(ecran);
 
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gyokuro.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_agathe.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     desktopContent(ecran);
@@ -62,7 +62,7 @@ int kazutsnDesktop()
 
     testEcran(ecran);
 
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gyokuro.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_gin.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     desktopContent(ecran);
@@ -86,7 +86,7 @@ int lacroivDesktop()
 
     testEcran(ecran);
 
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gyokuro.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_gin.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     desktopContent(ecran);
@@ -110,7 +110,7 @@ int madoffbDesktop()
 
     testEcran(ecran);
 
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gyokuro.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_c37g11p7t3.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     desktopContent(ecran);
@@ -134,7 +134,7 @@ int morsescDesktop()
 
     testEcran(ecran);
 
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gyokuro.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_roses.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     desktopContent(ecran);
@@ -158,7 +158,7 @@ int ponzicDesktop()
 
     testEcran(ecran);
 
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gyokuro.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_framboise.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     desktopContent(ecran);
@@ -182,7 +182,7 @@ int standfaDesktop()
 
     testEcran(ecran);
 
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gyokuro.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_poker.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     desktopContent(ecran);
