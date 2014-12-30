@@ -38,7 +38,7 @@ int ponzicDesktop()
     SDL_WM_SetCaption("Desktop", NULL);
 
     //affichage des images
-    imageDeFond = SDL_LoadBMP("Resources/desktop7.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_framboise.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     imageContactList = SDL_LoadBMP("Resources/contact_list.bmp");

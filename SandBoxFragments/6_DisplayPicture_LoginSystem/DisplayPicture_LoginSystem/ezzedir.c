@@ -38,7 +38,7 @@ int ezzedirDesktop()
     SDL_WM_SetCaption("Desktop", NULL);
 
     //affichage des images
-    imageDeFond = SDL_LoadBMP("Resources/desktop2.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_agathe.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     imageContactList = SDL_LoadBMP("Resources/contact_list.bmp");

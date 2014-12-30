@@ -51,10 +51,10 @@
 		</Unit>
 		<Unit filename="brinklr.h" />
 		<Unit filename="cb.bmp" />
-		<Unit filename="displayPicture_loginSystem.c">
+		<Unit filename="displayPicture.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="displayPicture_loginSystem.h" />
+		<Unit filename="displayPicture.h" />
 		<Unit filename="ezzedir.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -83,10 +83,10 @@
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="morsec.c">
+		<Unit filename="morsesc.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="morsec.h" />
+		<Unit filename="morsesc.h" />
 		<Unit filename="ponzic.c">
 			<Option compilerVar="CC" />
 		</Unit>

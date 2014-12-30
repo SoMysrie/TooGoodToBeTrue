@@ -11,13 +11,13 @@
 
 #include "input.h"
 #include "loginSystem.h"
-#include "displayPicture_loginSystem.h"
+#include "displayPicture.h"
 #include "brinklr.h"
 #include "ezzedir.h"
 #include "kazutsn.h"
 #include "lacroiv.h"
 #include "madoffb.h"
-#include "morsec.h"
+#include "morsesc.h"
 #include "ponzic.h"
 #include "standfa.h"
 

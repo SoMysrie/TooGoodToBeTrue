@@ -38,7 +38,7 @@ int standfaDesktop()
     SDL_WM_SetCaption("Desktop", NULL);
 
     //affichage des images
-    imageDeFond = SDL_LoadBMP("Resources/desktop8.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_poker.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     imageContactList = SDL_LoadBMP("Resources/contact_list.bmp");

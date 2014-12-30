@@ -38,7 +38,7 @@ int madoffbDesktop()
     SDL_WM_SetCaption("Desktop5", NULL);
 
     //affichage des images
-    imageDeFond = SDL_LoadBMP("Resources/desktop.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_c37g11p7t3.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     imageContactList = SDL_LoadBMP("Resources/contact_list.bmp");

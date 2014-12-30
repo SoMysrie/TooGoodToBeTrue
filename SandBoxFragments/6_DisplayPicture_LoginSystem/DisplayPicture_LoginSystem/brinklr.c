@@ -5,20 +5,20 @@ int brinklrDesktop()
     SDL_Surface *ecran = NULL, *imageDeFond = NULL, *imageContactList = NULL, *imageFile = NULL, *imageFolder = NULL, *imageFolderImportant = NULL, *imageTrashEmpty = NULL, *imageTrashFull = NULL;
     SDL_Rect positionFond, positionContactList, positionFile, positionFolder, positionFolderImportant, positionTrashEmpty, positionTrashFull;
 
-    positionFond.x          = 0;
-    positionFond.y          = 0;
-    positionTrashEmpty.x    = 30;
-    positionTrashEmpty.y    = 30;
-    positionTrashFull.x     = 30;
-    positionTrashFull.y     = 30;
-    positionContactList.x   = 30;
-    positionContactList.y   = 120;
-    positionFile.x          = 50;
-    positionFile.y          = 210;
-    positionFolder.x        = 30;
-    positionFolder.y        = 300;
-    positionFolderImportant.x = 30;
-    positionFolderImportant.y = 390;
+    positionFond.x              = 0;
+    positionFond.y              = 0;
+    positionTrashEmpty.x        = 30;
+    positionTrashEmpty.y        = 30;
+    positionTrashFull.x         = 30;
+    positionTrashFull.y         = 30;
+    positionContactList.x       = 30;
+    positionContactList.y       = 120;
+    positionFile.x              = 50;
+    positionFile.y              = 210;
+    positionFolder.x            = 30;
+    positionFolder.y            = 300;
+    positionFolderImportant.x   = 30;
+    positionFolderImportant.y   = 390;
 
 
     if (SDL_Init(SDL_INIT_VIDEO) == -1)
@@ -38,7 +38,7 @@ int brinklrDesktop()
     SDL_WM_SetCaption("Desktop", NULL);
 
     //affichage des images
-    imageDeFond = SDL_LoadBMP("Resources/desktop.bmp");
+    imageDeFond = SDL_LoadBMP("Resources/desktop_cafe.bmp");
     SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
 
     imageContactList = SDL_LoadBMP("Resources/contact_list.bmp");

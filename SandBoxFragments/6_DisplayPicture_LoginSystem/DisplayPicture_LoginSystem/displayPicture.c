@@ -1,45 +1,79 @@
 #include "header.h"
 
-int lacroivDesktop()
+void pause()
 {
-    SDL_Surface *ecran = NULL, *imageDeFond = NULL, *imageContactList = NULL, *imageFile = NULL, *imageFolder = NULL, *imageFolderImportant = NULL, *imageTrashEmpty = NULL, *imageTrashFull = NULL;
-    SDL_Rect positionFond, positionContactList, positionFile, positionFolder, positionFolderImportant, positionTrashEmpty, positionTrashFull;
+    int continuer = 1;
+    SDL_Event event;
 
-    positionFond.x          = 0;
-    positionFond.y          = 0;
-    positionTrashEmpty.x    = 30;
-    positionTrashEmpty.y    = 30;
-    positionTrashFull.x     = 30;
-    positionTrashFull.y     = 30;
-    positionContactList.x   = 30;
-    positionContactList.y   = 120;
-    positionFile.x          = 50;
-    positionFile.y          = 210;
-    positionFolder.x        = 30;
-    positionFolder.y        = 300;
-    positionFolderImportant.x = 30;
-    positionFolderImportant.y = 390;
-
-
-    if (SDL_Init(SDL_INIT_VIDEO) == -1)
+    while (continuer)
     {
-        fprintf(stderr, "Erreur d'initialisation de la SDL : %s\n", SDL_GetError()); //ecriture de l'erreur
-        exit(EXIT_FAILURE); //arrêt du programme
+        SDL_WaitEvent(&event);
+        switch(event.type)
+        {
+            case SDL_QUIT:
+                continuer = 0;
+        }
     }
-
-    ecran = SDL_SetVideoMode(800, 600, 32, SDL_HWSURFACE | SDL_FULLSCREEN | SDL_DOUBLEBUF);
-
-    // Si l'ouverture a échoué, on le note et on arrête
-    if (ecran == NULL)
+};
+/*
+int displayDesktop(char id)
+{
+    if(strcmp(id, "kazutsn"))
     {
-        fprintf(stderr, "Impossible de charger le mode video : %s\n", SDL_GetError());
-        exit(EXIT_FAILURE);
+        kazutsnDesktop();
     }
-    SDL_WM_SetCaption("Desktop", NULL);
+    else if(strcmp(id, "ezzedir"))
+    {
+        ezzedirDesktop();
+    }
+    else if(strcmp(id, "morsesc"))
+    {
+        morsescDesktop();
+    }
+    if(strcmp(id, "brinklr"))
+    {
+        brinklrDesktop();
+    }
+    else if(strcmp(id, "standfa"))
+    {
+        standfaDesktop();
+    }
+    else if(strcmp(id, "madoffb"))
+    {
+        madoffbDesktop();
+    }
+    else if(strcmp(id, "lacroiv"))
+    {
+        lacroivDesktop();
+    }
+    else if(strcmp(id, "ponzic"))
+    {
+        ponzicDesktop();
+    }
+    else
+        printf("\n\nErreur!\n\n");
 
-    //affichage des images
-    imageDeFond = SDL_LoadBMP("Resources/desktop_gin.bmp");
-    SDL_BlitSurface(imageDeFond, NULL, ecran, &positionFond);
+    return 0;
+}
+*/
+/*
+int desktopContent(SDL_Surface ecran)
+{
+    SDL_Surface *imageContactList = NULL, *imageFile = NULL, *imageFolder = NULL, *imageFolderImportant = NULL, *imageTrashEmpty = NULL, *imageTrashFull = NULL;
+    SDL_Rect positionContactList, positionFile, positionFolder, positionFolderImportant, positionTrashEmpty, positionTrashFull;
+
+    positionTrashEmpty.x        = 30;
+    positionTrashEmpty.y        = 30;
+    positionTrashFull.x         = 30;
+    positionTrashFull.y         = 30;
+    positionContactList.x       = 30;
+    positionContactList.y       = 120;
+    positionFile.x              = 50;
+    positionFile.y              = 210;
+    positionFolder.x            = 30;
+    positionFolder.y            = 300;
+    positionFolderImportant.x   = 30;
+    positionFolderImportant.y   = 390;
 
     imageContactList = SDL_LoadBMP("Resources/contact_list.bmp");
     SDL_SetColorKey(imageContactList, SDL_SRCCOLORKEY, SDL_MapRGB(imageContactList->format, 0, 0, 0));
@@ -66,12 +100,6 @@ int lacroivDesktop()
     SDL_SetColorKey(imageTrashFull, SDL_SRCCOLORKEY, SDL_MapRGB(imageTrashFull->format, 0, 0, 0));
     SDL_BlitSurface(imageTrashFull, NULL, ecran, &positionTrashFull);
 
-    //mise à jour de l'écran avec sa nouvelle couleur
-    SDL_Flip(ecran);
-    pause();
-
-    //liberation de la surface
-    SDL_FreeSurface(imageDeFond);
     SDL_FreeSurface(imageContactList);
     SDL_FreeSurface(imageFile);
     SDL_FreeSurface(imageFolder);
@@ -84,3 +112,4 @@ int lacroivDesktop()
 
     return 0;
 }
+*/
