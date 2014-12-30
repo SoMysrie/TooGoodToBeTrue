@@ -1,5 +1,8 @@
 
 void    pause           ();
-int     displayDesktop  (char id);
-int     desktopContent  (SDL_Surface ecran);
+void    testSdl         ();
+void    testEcran       (SDL_Surface *ecran);
+void    clearEcran      (SDL_Surface *ecran);
+int     desktopContent  (SDL_Surface *ecran);
+int     displayDesktop  (char id[30]);
 

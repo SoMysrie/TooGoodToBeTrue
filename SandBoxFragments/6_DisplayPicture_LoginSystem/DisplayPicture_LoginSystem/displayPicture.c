@@ -12,52 +12,41 @@ void pause()
         {
             case SDL_QUIT:
                 continuer = 0;
+            case SDL_KEYDOWN:
+                continuer = 0;
+                break;
         }
     }
-};
-/*
-int displayDesktop(char id)
-{
-    if(strcmp(id, "kazutsn"))
-    {
-        kazutsnDesktop();
-    }
-    else if(strcmp(id, "ezzedir"))
-    {
-        ezzedirDesktop();
-    }
-    else if(strcmp(id, "morsesc"))
-    {
-        morsescDesktop();
-    }
-    if(strcmp(id, "brinklr"))
-    {
-        brinklrDesktop();
-    }
-    else if(strcmp(id, "standfa"))
-    {
-        standfaDesktop();
-    }
-    else if(strcmp(id, "madoffb"))
-    {
-        madoffbDesktop();
-    }
-    else if(strcmp(id, "lacroiv"))
-    {
-        lacroivDesktop();
-    }
-    else if(strcmp(id, "ponzic"))
-    {
-        ponzicDesktop();
-    }
-    else
-        printf("\n\nErreur!\n\n");
-
-    return 0;
 }
-*/
 
-int desktopContent(SDL_Surface ecran)
+void testSdl()
+{
+    if (SDL_Init(SDL_INIT_VIDEO) == -1)
+    {
+        fprintf(stderr, "Erreur d'initialisation de la SDL : %s\n", SDL_GetError()); //ecriture de l'erreur
+        exit(1); //arrêt du programme
+    }
+}
+
+void testEcran(SDL_Surface *ecran)
+{
+    if (ecran == NULL)      // Si l'ouverture a échoué, on le note et on arrête
+    {
+        fprintf(stderr, "Impossible de charger le mode video : %s\n", SDL_GetError());
+        exit(1);
+    }
+    SDL_WM_SetCaption("Desktop", NULL);
+}
+
+void clearEcran(SDL_Surface *ecran)
+{
+
+    SDL_Flip(ecran);    //mise à jour de l'écran avec sa nouvelle couleur
+    pause();
+    SDL_Quit();         //arrêt de la SDL (libération de la mémoire).
+}
+
+int desktopContent(SDL_Surface *ecran)
 {
     SDL_Surface *imageContactList = NULL, *imageFile = NULL, *imageFolder = NULL, *imageFolderImportant = NULL, *imageTrashEmpty = NULL, *imageTrashFull = NULL, *imageStop = NULL;
     SDL_Rect positionContactList, positionFile, positionFolder, positionFolderImportant, positionTrashEmpty, positionTrashFull, positionStop;
@@ -90,7 +79,6 @@ int desktopContent(SDL_Surface ecran)
     SDL_BlitSurface(imageFolder, NULL, ecran, &positionFolder);
 
     imageFolderImportant = SDL_LoadBMP("Resources/folder_important.bmp");
-    //imageFolderImportant = IMG_Load("Resources/folder_important.bmp");
     SDL_SetColorKey(imageFolderImportant, SDL_SRCCOLORKEY, SDL_MapRGB(imageFolderImportant->format, 0, 0, 0));
     SDL_BlitSurface(imageFolderImportant, NULL, ecran, &positionFolderImportant);
 
@@ -114,8 +102,29 @@ int desktopContent(SDL_Surface ecran)
     SDL_FreeSurface(imageTrashFull);
     SDL_FreeSurface(imageStop);
 
-    //arrêt de la SDL (libération de la mémoire).
-    SDL_Quit();
+    return 0;
+}
+
+int displayDesktop(char id[30])
+{
+    if(strcmp(id, "kazutsn"))
+        kazutsnDesktop();
+    else if(strcmp(id, "ezzedir"))
+        ezzedirDesktop();
+    else if(strcmp(id, "morsesc"))
+        morsescDesktop();
+    if(strcmp(id, "brinklr"))
+        brinklrDesktop();
+    else if(strcmp(id, "standfa"))
+        standfaDesktop();
+    else if(strcmp(id, "madoffb"))
+        madoffbDesktop();
+    else if(strcmp(id, "lacroiv"))
+        lacroivDesktop();
+    else if(strcmp(id, "ponzic"))
+        ponzicDesktop();
+    else
+        printf("\n\nErreur!\n\n");
 
     return 0;
 }
