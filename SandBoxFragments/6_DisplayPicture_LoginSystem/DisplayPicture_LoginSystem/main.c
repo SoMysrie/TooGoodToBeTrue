@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[])
 {
-    char id[30], mdp[30];
+    char id[30], mdp[30], test[30], answerMail[100];
     int  cpt = 0, continuer = 1;
     int answerId, answerAgain, answerDrug, answerWant;
 
@@ -10,7 +10,6 @@ int main(int argc, char *argv[])
     freopen("CON", "w", stderr);
 
     checkFile();
-
     storyGame();
 
     do
@@ -23,6 +22,7 @@ int main(int argc, char *argv[])
     {
         do
         {
+            input("\n\n", test, 30);
             input("\n\nIdentifiant\n\n", id, 30);
             input("\n\nMot de passe\n\n", mdp, 30);
             if (check(id, mdp) == 1)
@@ -51,14 +51,13 @@ int main(int argc, char *argv[])
             }
         }
 
-        if(cpt == 1)
+        if(cpt == 4)
         {
             badEndGame();
             anotherTime(&answerAgain);
             if(answerAgain == 2)
                 continuer = 0;
         }
-
     }while(continuer != 0);
 
     return 0;

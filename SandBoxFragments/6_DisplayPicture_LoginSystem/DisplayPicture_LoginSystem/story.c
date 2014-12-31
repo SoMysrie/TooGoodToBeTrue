@@ -31,25 +31,16 @@ int anotherTime(int *answer)
 
 int wantToVerifDrug(int *answer)
 {
-    //system("PAUSE");
-    //system("cls");
-
     printf("\n\n");
     printf("\nAvez vous trouver le medicament defectueux?\n");
     printf("1. Oui.\n");
     printf("2. Non.\n");
     scanf("%d", answer);
     printf("\n\n");
-
-    //system("PAUSE");
-    //system("cls");
 }
 
 int verifDrug(int *answer)
 {
-    //system("PAUSE");
-    //system("cls");
-
     printf("\n\n");
     printf("\nQuel est le medicament defectueux?\n");
     printf("1. Combantrin 125mg cp.\n");
@@ -61,26 +52,26 @@ int verifDrug(int *answer)
     printf("7. Zolmitriptan Evolugen 2.5mg cp pellic.\n");
     scanf("%d", answer);
     printf("\n\n");
+}
 
-    //system("PAUSE");
-    //system("cls");
+char verifMail(char *answer[100])
+{
+    printf("\n\n");
+    inputInt(answer, 100);
+
+    printf("\n\n");
 }
 
 void storyGame()
 {
-    //system("PAUSE");
-    //system("cls");
-
     printf("\n\n\n\n");
     printf("Bienvenue sur le jeu Too Good To Be True!");
     printf("\n\n\n\n");
-    //system("PAUSE");
 
     printf("Vous etes un employe de l'entreprise CaRe&Co.\n");
     printf("C'est une tres grande entreprise pharmaceutique,\n");
     printf("qui va sortir le mois prochain une dizaine de medicaments.\n");
     printf("\n\n\n\n");
-    //system("PAUSE");
 
     printf("Sauf que vous avez des doutes pour l'un de ces medicaments...");
     printf("\n\n\n\n");
@@ -90,20 +81,12 @@ void storyGame()
     printf("Pour cela, il sera necessaire de faire preuve de rigueur\n");
     printf("et de perseverance afin de trouver leur mot de passe!");
     printf("\n\n\n\n");
-    //system("PAUSE");
 
     printf("Bon courage!");
-    printf("\n\n\n\n");
-
-    //system("PAUSE");
-    //system("cls");
 }
 
 void happyEndGame()
 {
-    //system("PAUSE");
-    //system("cls");
-
     printf("\n\n\n\n");
     printf("Bravo!!");
     printf("\n\n\n\n");
@@ -111,20 +94,11 @@ void happyEndGame()
     printf("Grace a votre perseverance,\n");
     printf("vous avez sauve beaucoup de vies!");
     printf("\n\n\n\n");
-
-    //system("PAUSE");
-    //system("cls");
 }
 
 void badEndGame()
 {
-    //system("PAUSE");
-    //system("cls");
-
     printf("\n\n\n\n");
     printf("Game Over!!");
     printf("\n\n\n\n");
-
-    //system("PAUSE");
-    //system("cls");
 }
