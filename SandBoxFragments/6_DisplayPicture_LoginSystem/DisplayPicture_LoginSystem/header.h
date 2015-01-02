@@ -17,6 +17,8 @@
 #include "loginSystem.h"
 #include "displayPicture.h"
 #include "desktop.h"
+#include "drug.h"
+#include "contact.h"
 
 
 #endif // HEADER

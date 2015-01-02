@@ -75,11 +75,11 @@ void storyGame()
 
     printf("Sauf que vous avez des doutes pour l'un de ces medicaments...");
     printf("\n\n\n\n");
-    printf("Donc le but du jeu, est de decouvrir lequel est-ce.\n");
-    printf("Vous trouverez lequel n cherchant parmi les fichiers et\n");
+    printf("Votre objectif est de decouvrir lequel est-ce.\n");
+    printf("Vous trouverez lequel en cherchant parmi les fichiers et\n");
     printf("les mails de vos collegues.\n\n");
     printf("Pour cela, il sera necessaire de faire preuve de rigueur\n");
-    printf("et de perseverance afin de trouver leur mot de passe!");
+    printf("et de perseverance afin de trouver leur mot de passe et leurs secrets!");
     printf("\n\n\n\n");
 
     printf("Bon courage!");

@@ -47,6 +47,10 @@
 			<Add directory="C:/Program Files (x86)/CodeBlocks/SDL-1.2.15/lib" />
 		</Linker>
 		<Unit filename="cb.bmp" />
+		<Unit filename="contact.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="contact.h" />
 		<Unit filename="desktop.c">
 			<Option compilerVar="CC" />
 		</Unit>
@@ -55,6 +59,10 @@
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="displayPicture.h" />
+		<Unit filename="drug.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="drug.h" />
 		<Unit filename="header.h" />
 		<Unit filename="input.c">
 			<Option compilerVar="CC" />
