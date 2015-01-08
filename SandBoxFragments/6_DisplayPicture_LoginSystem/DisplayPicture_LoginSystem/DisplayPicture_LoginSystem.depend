@@ -7,7 +7,7 @@
 1419938795 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\kazutsn.c
 	"header.h"
 
-1419954865 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\header.h
+1420548945 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\header.h
 	<stdlib.h>
 	<stdio.h>
 	<string.h>
@@ -20,6 +20,8 @@
 	"loginSystem.h"
 	"displayPicture.h"
 	"desktop.h"
+	"drug.h"
+	"contact.h"
 
 1325738639 c:\program files (x86)\codeblocks\sdl-1.2.15\include\sdl\sdl.h
 	"SDL_main.h"
@@ -219,7 +221,7 @@
 
 1419926024 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\kazutsn.h
 
-1419976630 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\main.c
+1420547274 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\main.c
 	"header.h"
 
 1419933035 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture_loginsystem.h
@@ -272,20 +274,30 @@
 1419938256 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\morsesc.c
 	"header.h"
 
-1420021473 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture.h
+1420022973 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture.h
 
 1419930954 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\morsesc.h
 
-1420021216 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture.c
+1420472271 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\displaypicture.c
 	"header.h"
 
 1420010075 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\desktop.h
 
-1420021366 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\desktop.c
+1420021460 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\desktop.c
 	"header.h"
 
 1419958666 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\story.h
 
 1420010299 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\story.c
+	"header.h"
+
+1420022959 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\drug.h
+
+1420021901 c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\contact.h
+
+1420022407 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\contact.c
+	"header.h"
+
+1420022799 source:c:\users\sophie\documents\github\toogoodtobetrue\sandboxfragments\6_displaypicture_loginsystem\displaypicture_loginsystem\drug.c
 	"header.h"
 

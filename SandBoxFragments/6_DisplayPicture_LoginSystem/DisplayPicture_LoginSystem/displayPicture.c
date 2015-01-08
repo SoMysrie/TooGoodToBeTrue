@@ -190,7 +190,7 @@ int stop(SDL_Surface *ecran)
 
     return 0;
 }
-
+/*
 int verifWhere(SDL_Surface *ecran)
 {
     int continuer = 1;

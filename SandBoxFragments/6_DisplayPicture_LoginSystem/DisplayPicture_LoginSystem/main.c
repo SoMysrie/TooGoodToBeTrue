@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 
     do
     {
-        //addId(1);
+        addId(1);
         verifId(&answerId);
     }while(answerId!=1);
 
